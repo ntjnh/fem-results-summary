@@ -4,8 +4,8 @@
     background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     border-bottom-left-radius: 1.75rem;
     border-bottom-right-radius: 1.75rem;
-    color: #fff;
-    padding: 1.125rem 60px 40px;
+    color: $white;
+    padding: 1.25rem 3.75rem 2.5rem;
     text-align: center;
 
     .title {
@@ -17,36 +17,37 @@
 
     .score-circle {
         align-items: center;
-        background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+        background: linear-gradient(to bottom, hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
         border-radius: 50%;
-
         display: flex;
         flex-wrap: wrap;
-        height: 144px;
+        height: 140px;
         justify-content: center;
         margin: 0 auto;
-        width: 144px;
+        width: 140px;
 
         .score {
             font-size: 3.25rem;
             margin: 0;
 
             &-out-of {
+                color: hsla(221, 100%, 96%, .4);
                 display: block;
-                font-size: 14px;
+                font-size: 1rem;
+                font-weight: $med;
             }
         }
     }
 
     .feedback {
-        color: hsla(221, 100%, 96%, .8);
+        color: hsla(221, 100%, 96%, .7);
         font-weight: $reg;
         margin: 0;
 
         &-title {
             font-size: 1.5rem;
             font-weight: $med;
-            margin: 1.5rem 0 .75rem;
+            margin: 1.25rem 0 .75rem;
         }
     }
 }
