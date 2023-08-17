@@ -1,44 +1,80 @@
 @import '../assets/scss/global';
 
 .summary {
-    padding: .5rem 2rem;
+    padding: 1.5rem 2rem;
+
+    .title {
+        color: $dark-gray-blue;
+        margin: 0 0 1.5rem;
+    }
 
     .category {
         align-items: center;
-        border-radius: 12px;
+        border-radius: 9px;
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
-        margin: 0 0 1rem;
-        padding: 1.125rem 1.125rem;
+        padding: 1.125rem 1.125rem 1.125rem 3rem;
+        position: relative;
         width: 100%;
 
-        &.light-red {
-            background-color: rgba($light-red, .1);
+        &:before {
+            background: center no-repeat;
+            background-size: contain;
+            content: '';
+            display: inline-block;
+            height: 20px;
+            left: 14px;
+            position: absolute;
+            width: 20px;
+        }
+        
+        &:not(:last-of-type) {
+            margin: 0 0 .95rem;
+        }
+
+        &.reaction {
+            background-color: rgba($light-red, .075);
+
+            &:before {
+                background-image: url('../assets/images/icon-reaction.svg');
+            }
 
             .category__name {
                 color: $light-red;
             }
         }
 
-        &.orangey-yellow {
-            background-color: rgba($orangey-yellow, .1);
+        &.memory {
+            background-color: rgba($orangey-yellow, .075);
+
+            &:before {
+                background-image: url('../assets/images/icon-memory.svg');
+            }
 
             .category__name {
                 color: $orangey-yellow;
             }
         }
 
-        &.green-teal {
-            background-color: rgba($green-teal, .1);
+        &.verbal {
+            background-color: rgba($green-teal, .075);
+
+            &:before {
+                background-image: url('../assets/images/icon-verbal.svg');
+            }
 
             .category__name {
                 color: $green-teal;
             }
         }
 
-        &.cobalt-blue {
-            background-color: rgba($cobalt-blue, .1);
+        &.visual {
+            background-color: rgba($cobalt-blue, .075);
+
+            &:before {
+                background-image: url('../assets/images/icon-visual.svg');
+            }
 
             .category__name {
                 color: $cobalt-blue;
@@ -50,10 +86,6 @@
             font-size: 1rem;
             font-weight: $med;
             margin: 0;
-        }
-
-        &__name {
-            
         }
 
         &__score {
@@ -71,10 +103,10 @@
         color: $white;
         cursor: pointer;
         display: inline-block;
-        font-size: 17px;
+        font-size: 1.0625rem;
         font-weight: $med;
         letter-spacing: .03em;
-        margin-bottom: 1.75rem;
+        margin: 1.5rem 0 1.75rem;
         padding: 1.125rem 0;
         text-align: center;
         width: 100%;
