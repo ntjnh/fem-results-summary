@@ -1,29 +1,31 @@
+import './Summary.scss'
+
 export default function Summary() {
     return (
-        <div>
-            <h3>Summary</h3>
+        <div className='summary'>
+            <h3 className='title'>Summary</h3>
 
-            <div>
-                <h5>Reaction</h5>
-                <h5>80 / 100</h5>
+            <div className='category light-red'>
+                <h5 className='category__name'>Reaction</h5>
+                <h5 className='category__score'>80 <span className='out-of'>/ 100</span></h5>
             </div>
 
-            <div>
-                <h5>Memory</h5>
-                <h5>92 / 100</h5>
+            <div className='category orangey-yellow'>
+                <h5 className='category__name'>Memory</h5>
+                <h5 className='category__score'>92 <span className='out-of'>/ 100</span></h5>
             </div>
 
-            <div>
-                <h5>Verbal</h5>
-                <h5>61 / 100</h5>
+            <div className='category green-teal'>
+                <h5 className='category__name'>Verbal</h5>
+                <h5 className='category__score'>61 <span className='out-of'>/ 100</span></h5>
             </div>
 
-            <div>
-                <h5>Visual</h5>
-                <h5>72 / 100</h5>
+            <div className='category cobalt-blue'>
+                <h5 className='category__name'>Visual</h5>
+                <h5 className='category__score'>72 <span className='out-of'>/ 100</span></h5>
             </div>
 
-            <button>Continue</button>
+            <button className='summary__cta'>Continue</button>
         </div>
     )
 }
