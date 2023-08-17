@@ -1,0 +1,42 @@
+@import '../assets/scss/global';
+
+.results {
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: #fff;
+    padding: 28px 60px 40px;
+    text-align: center;
+
+    .title {
+        color: $pale-blue;
+        font-size: 1.125rem;
+        font-weight: 400;
+        margin-top: 0;
+    }
+
+    .score-circle {
+        align-items: center;
+        background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+        border-radius: 50%;
+
+        display: flex;
+        flex-wrap: wrap;
+        height: 144px;
+        justify-content: center;
+        margin: 0 auto;
+        width: 144px;
+
+        .score {
+            font-size: 3.25rem;
+            margin: 0;
+
+            &-out-of {
+                display: block;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .feedback {
+        margin: 0;
+    }
+}
