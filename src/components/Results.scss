@@ -2,15 +2,17 @@
 
 .results {
     background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-bottom-left-radius: 1.75rem;
+    border-bottom-right-radius: 1.75rem;
     color: #fff;
-    padding: 28px 60px 40px;
+    padding: 1.125rem 60px 40px;
     text-align: center;
 
     .title {
-        color: $pale-blue;
+        color: hsla(221, 100%, 96%, .8);
         font-size: 1.125rem;
-        font-weight: 400;
-        margin-top: 0;
+        font-weight: $reg;
+        margin: 0 0 1.5rem;
     }
 
     .score-circle {
@@ -37,6 +39,14 @@
     }
 
     .feedback {
+        color: hsla(221, 100%, 96%, .8);
+        font-weight: $reg;
         margin: 0;
+
+        &-title {
+            font-size: 1.5rem;
+            font-weight: $med;
+            margin: 1.5rem 0 .75rem;
+        }
     }
 }
