@@ -142,6 +142,7 @@
             margin: 2.75rem 0 0;
         }
 
+        &:focus,
         &:hover {
             background: linear-gradient(to bottom, $light-slate-blue, hsl(241, 81%, 54%));
         }
