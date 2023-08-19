@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [frontendmentor.io](https://www.frontendmentor.io/solutions/reacty-results-summary-component-eae7fJJAPI)
 - Live Site URL: [ntjnh-fem-results-summary.netlify.app](https://ntjnh-fem-results-summary.netlify.app/)
 
 ## My process
