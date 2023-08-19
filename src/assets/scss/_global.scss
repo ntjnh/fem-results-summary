@@ -44,4 +44,68 @@ body {
     font-weight: 500;
     margin: 0;
     padding: 0;
+
+    .App {
+        position: relative;
+
+        @media (min-width: 840px) {
+            width: 100vw;
+
+            @media (min-height: 640px) {
+                height: 100vh;
+                overflow: hidden;
+            }
+            
+            .container {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                padding-bottom: 90px;
+                width: 100%;
+
+                @media (min-height: 640px) {
+                    height: 100%;
+                }
+
+                .card-container {
+                    border-radius: 1.75rem;
+                    box-shadow: 2px 20px 20px 12px hsla(224, 85%, 45%, 0.05);
+                    display: flex;
+                    flex-wrap: nowrap;
+                    max-height: 512px;
+                    max-width: 740px;
+                }
+            }
+        }
+
+        .attribution {
+            background-color: $dark-gray-blue;
+            margin-top: 1.5rem;
+            text-align: center;
+
+            @media (min-width: 840px) {
+                margin-top: 0;
+                bottom: 0;
+                display: block;
+                position: absolute;
+                width: 100%;
+            }
+            
+            & > div {
+                color: $white;
+                margin: 0 auto;
+                padding: 1.5rem 0;
+            }
+            
+            a {
+                color: $light-lavender;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        
+    }
 }
