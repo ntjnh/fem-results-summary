@@ -8,11 +8,23 @@
     padding: 1.25rem 3.75rem 2.5rem;
     text-align: center;
 
+    @media (min-width: 840px) {
+        border-top-left-radius: 1.75rem;
+        border-top-right-radius: 1.75rem;
+        padding-top: 2.25rem;
+        width: 50%;
+    }
+
     .title {
         color: hsla(221, 100%, 96%, .8);
         font-size: 1.125rem;
         font-weight: $reg;
         margin: 0 0 1.5rem;
+
+        @media (min-width: 840px) {
+            font-size: 1.375rem;
+            margin-bottom: 2.25rem;
+        }
     }
 
     .score-circle {
@@ -26,15 +38,28 @@
         margin: 0 auto;
         width: 140px;
 
+        @media (min-width: 840px) {
+            height: 196px;
+            width: 196px;
+        }
+
         .score {
             font-size: 3.25rem;
             margin: 0;
 
+            @media (min-width: 840px) {
+                font-size: 4.25rem;
+            }
+
             &-out-of {
-                color: hsla(221, 100%, 96%, .4);
+                color: hsla(221, 100%, 96%, .6);
                 display: block;
                 font-size: 1rem;
                 font-weight: $med;
+
+                @media (min-width: 840px) {
+                    font-size: 1.125rem;
+                }
             }
         }
     }
@@ -44,10 +69,19 @@
         font-weight: $reg;
         margin: 0;
 
+        @media (min-width: 840px) {
+            font-size: 1.125rem;
+        }
+
         &-title {
             font-size: 1.5rem;
             font-weight: $med;
             margin: 1.25rem 0 .75rem;
+
+            @media (min-width:1024px) {
+                font-size: 2rem;
+                margin: 2.125rem 0 .625rem;
+            }
         }
     }
 }
